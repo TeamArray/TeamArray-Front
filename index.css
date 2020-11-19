@@ -1,0 +1,11 @@
+/* index.css */
+
+
+.s0 {
+    background-image: url('./images/array.jpg');
+    background-size: cover;
+}
+
+#fp-nav ul li a span {
+    background-color: #fff;
+}
