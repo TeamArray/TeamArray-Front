@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import ReactFullpage from '@fullpage/react-fullpage';
+import React, { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    };
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <ReactFullpage 
+          licenseKey={''}
+          scrollingSpeed={500}
+          render={() => (
+            <ReactFullpage.Wrapper>
+              <div className="section">
+                <h1>Array</h1>
+              </div>
+              <div className="section">
+                <p>Section 1</p>
+              </div>
+              <div className="section">
+                <p>Section 2</p>
+              </div>
+              <div className="section">
+                <p>Section 3</p>
+              </div>
+            </ReactFullpage.Wrapper>
+          )}
+        />
+      </div>
+    );
+  }
 }
 
 export default App;
