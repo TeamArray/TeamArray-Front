@@ -1,4 +1,5 @@
 import ReactFullpage from '@fullpage/react-fullpage';
+import { Route } from 'react-router-dom';
 import React, { Component } from 'react';
 
 class App extends Component {
