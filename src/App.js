@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import AppRouter from "./Routes"
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 // http://localhost:3000 가세요
 
 class App extends Component {
@@ -25,6 +27,7 @@ class App extends Component {
           <title> ARRAY [] </title>
         </Helmet>
         <AppRouter isLoggedIn={false}></AppRouter>
+        <ToastContainer position={toast.POSITION.BOTTOM_RIGHT} />
       </div>
     );
   }
