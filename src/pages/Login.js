@@ -6,6 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 //import {  } from '';
 
 export default class Login extends React.Component {
@@ -43,6 +44,12 @@ export default class Login extends React.Component {
   render() {
     return (
       <Container component="main" maxWidth="xs" style={{ position:'absolute',top:'50%', left:'50%',transform:'translate(-50%, -50%)'}}>
+        <Helmet>
+                    <title>
+                        ARRAY[] | LOGIN
+                    </title>
+                </Helmet>
+                
         <div className="login" style={{alignSelf:'center'}}>
             <Typography component="h1" variant="h5">
                 Login

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import AppRouter from "./Routes"
 // http://localhost:3000 가세요
 
@@ -18,7 +19,11 @@ class App extends Component {
 
   render() {
     return (
+
       <div style={{width:window.innerWidth, height:window.innerHeight,alignItems:'center',justifyContent:'center',display:'flex',backgroundColor:'white'}}>
+        <Helmet>
+          <title> ARRAY [] </title>
+        </Helmet>
         <AppRouter isLoggedIn={false}></AppRouter>
       </div>
     );

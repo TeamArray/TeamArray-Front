@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 
 class Main extends Component {
     constructor(props){
@@ -11,6 +12,11 @@ class Main extends Component {
     render(){
         return (
             <div>
+                <Helmet>
+                    <title>
+                        ARRAY[] | MAIN
+                    </title>
+                </Helmet>
                 <h1>
                     환영합니다!
                 </h1>
