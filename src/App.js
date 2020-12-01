@@ -26,7 +26,7 @@ class App extends Component {
         <Helmet>
           <title> ARRAY [] </title>
         </Helmet>
-        <AppRouter isLoggedIn={false}></AppRouter>
+        <AppRouter isLoggedIn={true}></AppRouter>
         <ToastContainer position={toast.POSITION.BOTTOM_RIGHT} />
       </div>
     );

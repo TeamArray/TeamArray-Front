@@ -11,15 +11,14 @@ class Main extends Component {
 
     render(){
         return (
-            <div>
+            <div className="Main">
                 <Helmet>
+                    <meta charset="UTF-8"/>
                     <title>
                         ARRAY[] | MAIN
                     </title>
                 </Helmet>
-                <h1>
-                    환영합니다!
-                </h1>
+                <img src="1.png" alt=""></img>
             </div>
         );
     }
