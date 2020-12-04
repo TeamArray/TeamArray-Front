@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 
+import imgA from './1.jpg';
+
+
 class Main extends Component {
     constructor(props){
         super(props);
@@ -18,11 +21,9 @@ class Main extends Component {
                         ARRAY[] | MAIN
                     </title>
                 </Helmet>
-                <body>
-                <div class="image"/>
-                <img src="1.jpg"/>
-                <div>환영합니다</div>
-                </body>
+                <h1>환영합니다</h1>
+                <h1>TEAM-ARRAY[]는 생각보다 엄청나답니다</h1>
+                <img src={imgA} width="100" height="100" alt="test"/>
             </div>
         );
     }
