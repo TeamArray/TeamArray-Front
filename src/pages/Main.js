@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 
-import imgA from './1.jpg';
+import './Main.css';
 
 
 class Main extends Component {
@@ -14,16 +14,14 @@ class Main extends Component {
 
     render(){
         return (
-            <div>
+            <div className="page">
                 <Helmet>
-                    <meta charset="UTF-8"/>
                     <title>
                         ARRAY[] | MAIN
                     </title>
                 </Helmet>
-                <h1>환영합니다</h1>
-                <h1>TEAM-ARRAY[]는 생각보다 엄청나답니다</h1>
-                <img src={imgA} width="100" height="100" alt="test"/>
+                <h2 className="text">환영합니다</h2>
+                <h1 className="text">TEAM-ARRAY[]는 생각보다...</h1>
             </div>
         );
     }

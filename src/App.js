@@ -22,7 +22,7 @@ class App extends Component {
   render() {
     return (
 
-      <div style={{width:window.innerWidth, height:window.innerHeight,alignItems:'center',justifyContent:'center',display:'flex',backgroundColor:'white'}}>
+      <div style={{width:'100%', height:'100vh',display:'flex',backgroundColor:'white'}}>
         <Helmet>
           <title> ARRAY [] </title>
         </Helmet>
